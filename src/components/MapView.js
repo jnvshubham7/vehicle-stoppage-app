@@ -6,7 +6,7 @@ function MapView({ gpsData, stoppages }) {
   const polyline = gpsData.map(point => [point.latitude, point.longitude]);
 
   return (
-    <MapContainer center={[37.7749, -122.4194]} zoom={13} style={{ height: '100vh', width: '100%' }}>
+    <MapContainer center={[12.9294916, 74.9173533]} zoom={14} style={{ height: '100vh', width: '100%' }}>
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
