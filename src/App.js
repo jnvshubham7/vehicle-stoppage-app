@@ -42,8 +42,12 @@ function App() {
 
   return (
     <div className="App">
-      <StoppageForm onThresholdChange={handleThresholdChange} />
-      <MapView gpsData={gpsData} stoppages={stoppages} />
+      <div className="form-container">
+        <StoppageForm onThresholdChange={handleThresholdChange} />
+      </div>
+      <div className="map-container">
+        <MapView gpsData={gpsData} stoppages={stoppages} />
+      </div>
     </div>
   );
 }
